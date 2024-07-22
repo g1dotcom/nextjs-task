@@ -4,7 +4,7 @@ import UpcomingTask from "@/components/overview/upcomingTask";
 
 function OverviewComponent() {
   return (
-    <div className="w-full h-screen flex flex-col bg-green-500">
+    <div className="w-full h-full flex flex-col bg-green-500">
       <Header />
       <div className=" flex justify-between bg-transparent">
         <UpcomingTask />
