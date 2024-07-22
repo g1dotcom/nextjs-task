@@ -84,7 +84,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
-{
-  /* <div className="flex w-[148px] h-[24px] text-secondinary-300 rounded-lg hover:text-secondinary-500 hover:bg-[#F5F5F7] justify-start items-center flex-1 gap-3 p-[20px]"> */
-}
