@@ -51,25 +51,25 @@ const Sidebar = () => {
   return (
     <div
       className={cn(
-        "space-y-4 py-8 flex flex-col items-center h-full  bg-white",
+        "space-y-4 py-8 flex flex-col items-center h-full  bg-[#FFFFFF]",
         PlusJakartaSans.className
       )}
     >
-      <div className="px-3 py-2 flex-1">
+      <div className="px-3 py-2 flex-1  ">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative w-[188px] h-[40px] mr-4">
             <Image fill alt="Logo" src="/sidebar/Logo.png" />
           </div>
         </Link>
-        <div className="w-[188px] h-[44px] flex flex-col items-center  ">
+        <div className=" flex flex-col items-center  ">
           {routes.map((route) => (
             <Link
               href={route.href}
               key={route.href}
-              className="text-[14px] font-semibold group flex p-3 w-full justify-start 
-                cursor-pointer text-[#8E92BC] hover:text-[#141522]  hover:bg-[#F5F5F7] rounded-lg transition"
+              className="text-[14px] w-[188px] h-[60px] font-semibold group flex p-3  justify-start 
+                cursor-pointer       transition"
             >
-              <div className="flex w-[148px] h-[24px] justify-start items-center flex-1 gap-3   p-[20px]">
+              <div className="flex w-[148px] h-[24px] text-secondinary-300 rounded-lg hover:text-secondinary-500 hover:bg-[#F5F5F7] justify-start items-center flex-1 gap-3   p-[20px]">
                 <route.icon width={24} height={24} />
 
                 {route.label}

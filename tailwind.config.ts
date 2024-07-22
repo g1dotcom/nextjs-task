@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       colors: {
-        'Primary': {
+        'primaryy': {
           100: '#DCE4FF',
           200: '#BAC8FF',
           300: '#98ABFF',
@@ -30,7 +30,7 @@ const config = {
           800: '#1A2793',
           900: '#10197A',
         },
-        'Success': {
+        'success': {
           100: '#F5FCD2',
           200: '#E8FAA6',
           300: '#D3F178',
@@ -41,7 +41,7 @@ const config = {
           800: '#4C7A0B',
           900: '#3B6506',
         },
-        'Error': {
+        'error': {
           100: '#FFE7D3',
           200: '#FFC8A6',
           300: '#FFA37A',
@@ -52,7 +52,7 @@ const config = {
           800: '#930B16',
           900: '#7A0619',
         },
-        'Warning': {
+        'warning': {
           100: '#FFF8D7',
           200: '#FFEFB0',
           300: '#FFE488',
@@ -63,7 +63,7 @@ const config = {
           800: '#936312',
           900: '#7A4D0B',
         },
-        'Information': {
+        'information': {
           100: '#DCF3FF',
           200: '#BAE5FF',
           300: '#98D3FF',
@@ -74,7 +74,7 @@ const config = {
           800: '#1A4393',
           900: '#102E7A',
         },
-        'Secondinary': {
+        'secondinary': {
           100: '#DFE1F3',
           200: '#C2C6E8',
           300: '#8E92BC',
