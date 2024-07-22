@@ -1,10 +1,18 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard } from "lucide-react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+//Iconsax
+import {
+  Category2,
+  Book1,
+  UserOctagon,
+  Message,
+  Setting2,
+} from "iconsax-react";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
   weight: "400",
@@ -14,31 +22,31 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
 const routes = [
   {
     label: "Overview",
-    icon: "/sidebar/category-2.png",
+    icon: Category2,
     href: "/overview",
-    color: "text-white",
+    color: "red",
   },
   {
     label: "Task",
-    icon: "/sidebar/book.png",
+    icon: Book1,
     href: "/products",
     color: "text-white",
   },
   {
     label: "Mentors",
-    icon: "/sidebar/user-octagon.png",
+    icon: UserOctagon,
     href: "/orders",
     color: "text-white",
   },
   {
     label: "Message",
-    icon: "/sidebar/message.png",
+    icon: Message,
     href: "/customers",
     color: "text-white",
   },
   {
     label: "Settings",
-    icon: "/sidebar/setting-2.png",
+    icon: Setting2,
     href: "/settings",
     color: "text-red-500 hover:text-red-100",
   },
@@ -55,10 +63,10 @@ const Sidebar = () => {
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative w-[188px] h-[40px] mr-4">
-            <Image fill alt="Logo" src="/logo.png" />
+            <Image fill alt="Logo" src="/sidebar/Logo.png" />
           </div>
         </Link>
-        <div className="space-y-1">
+        <div className="w-[200px] h-[316px]  space-y-6">
           {routes.map((route) => (
             <Link
               href={route.href}
@@ -67,15 +75,9 @@ const Sidebar = () => {
                 cursor-pointer text-[#8E92BC] hover:text-[#141522] font-bold hover:bg-[#F5F5F7] rounded-lg transition"
             >
               <div className="flex items-center flex-1 space-x-[24px] ">
-                {/* <route.icon className="w-5 h-5 mr-3" /> */}
-                <Image
-                  width={24}
-                  height={24}
-                  alt="Logo"
-                  src={String(route.icon)}
-                  className="hover:color-[#141522]"
-                />
-                <span className="">{route.label}</span>
+                <route.icon />
+
+                {route.label}
               </div>
             </Link>
           ))}
