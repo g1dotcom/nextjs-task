@@ -1,7 +1,11 @@
+import TaskToday from "@/components/overview/TaskToday";
+import UpcomingTask from "@/components/overview/UpcomingTask";
+
 const DashboardPage = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="">
+      <UpcomingTask />
+      <TaskToday />
     </div>
   );
 };
