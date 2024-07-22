@@ -28,17 +28,17 @@ const routes = [
   {
     label: "Task",
     icon: Book1,
-    href: "/products",
+    href: "/task",
   },
   {
     label: "Mentors",
     icon: UserOctagon,
-    href: "/orders",
+    href: "/mentors",
   },
   {
     label: "Message",
     icon: Message,
-    href: "/customers",
+    href: "/message",
   },
   {
     label: "Settings",
@@ -67,7 +67,7 @@ const Sidebar = () => {
               href={route.href}
               key={route.href}
               className="text-[14px] w-[188px] h-[60px] font-semibold group flex p-3  justify-start 
-                cursor-pointer       transition"
+                cursor-pointer"
             >
               <div className="flex w-[148px] h-[24px] text-secondinary-300 rounded-lg hover:text-secondinary-500 hover:bg-[#F5F5F7] justify-start items-center flex-1 gap-3   p-[20px]">
                 <route.icon width={24} height={24} />
