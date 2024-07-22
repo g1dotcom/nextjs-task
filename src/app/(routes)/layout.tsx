@@ -3,7 +3,7 @@ import Sidebar from "@/components/sidebar";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-screen relative bg-gray-100">
+    <div className="h-screen relative bg-[#FAFAFA]">
       <div
         className="hidden h-full w-[252px] md:flex  md:flex-col md:fixed 
       md:inset-y-0 z-[80]"
