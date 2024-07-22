@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center p-4">
+    <div className="flex items-center ">
       <Button variant="ghost" size="icon" className="md:hidden">
         <Menu />
       </Button>

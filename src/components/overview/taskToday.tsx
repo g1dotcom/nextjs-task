@@ -1,5 +1,5 @@
 function TaskToday() {
-  return <div>TaskToday</div>;
+  return <div className="w-1/4 bg-pink-500">TaskToday</div>;
 }
 
 export default TaskToday;
