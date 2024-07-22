@@ -1,3 +1,6 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Notification } from "iconsax-react";
+
 const Overview = () => {
   return (
     <div className="w-full h-screen flex flex-col bg-[#FAFAFA] ">
@@ -10,7 +13,13 @@ const Overview = () => {
             Lets finish your task today!
           </p>
         </div>
-        <div className=""></div>
+        <div className="flex justify-center items-center">
+          <Notification color="#8E92BC" width={24} height={24} />
+          <Avatar>
+            <AvatarImage src="/profil.png" alt="@shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </div>
       </header>
     </div>
   );
