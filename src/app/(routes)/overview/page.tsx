@@ -1,13 +1,11 @@
-import TaskToday from "@/components/overview/TaskToday";
-import UpcomingTask from "@/components/overview/UpcomingTask";
+import OverviewComponent from ".";
 
-const DashboardPage = () => {
+const Overview = () => {
   return (
-    <div className="">
-      <UpcomingTask />
-      <TaskToday />
+    <div className="w-full h-screen flex flex-col bg-green-500">
+      <OverviewComponent />
     </div>
   );
 };
 
-export default DashboardPage;
+export default Overview;
