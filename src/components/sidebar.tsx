@@ -61,13 +61,13 @@ const Sidebar = () => {
             <Image fill alt="Logo" src="/sidebar/Logo.png" />
           </div>
         </Link>
-        <div className="w-[188px] h-[316px] flex flex-col items-center  ">
+        <div className="w-[188px] h-[44px] flex flex-col items-center  ">
           {routes.map((route) => (
             <Link
               href={route.href}
               key={route.href}
-              className="text-sm group flex p-3 w-full justify-start 
-                cursor-pointer text-[#8E92BC] hover:text-[#141522] font-bold hover:bg-[#F5F5F7] rounded-lg transition"
+              className="text-[14px] font-semibold group flex p-3 w-full justify-start 
+                cursor-pointer text-[#8E92BC] hover:text-[#141522]  hover:bg-[#F5F5F7] rounded-lg transition"
             >
               <div className="flex w-[148px] h-[24px] justify-start items-center flex-1 gap-3   p-[20px]">
                 <route.icon width={24} height={24} />
