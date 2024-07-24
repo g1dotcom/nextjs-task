@@ -27,7 +27,7 @@ const Overview = () => {
           </Avatar>
         </div>
       </header>
-      <div className="w-full flex justify-between items-start">
+      <div className="w-full flex justify-between items-start p-8">
         <div className="w-[194px] h-[214px] bg-secondinary-500 text-white rounded-[10px] p-4 flex flex-col space-y-5">
           <h1 className="font-semibold text-[16px] text-[#ffffff]">
             Running Task
