@@ -1,4 +1,5 @@
 "use client";
+import { LineGraphics } from "@/components/overview/taskToday";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Notification } from "iconsax-react";
 
@@ -28,7 +29,9 @@ const Overview = () => {
       </header>
       <div className="w-full flex justify-between items-start">
         <div className="w-[194px] h-[214px] bg-secondinary-500 text-white rounded-[10px] p-4 flex flex-col space-y-5">
-          <h1 className="font-semibold text-[16px]">RunningTask</h1>
+          <h1 className="font-semibold text-[16px] text-[#ffffff]">
+            Running Task
+          </h1>
           <p className="font-semibold text-[32px]">65</p>
           <div className="flex  ">
             <CircularProgressbar
@@ -52,7 +55,9 @@ const Overview = () => {
             </h1>
           </div>
         </div>
-        <div className="bg-blue-500"></div>
+        <div className="w-[462px]">
+          <LineGraphics />
+        </div>
       </div>
     </div>
   );
