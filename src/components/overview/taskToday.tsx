@@ -1,7 +1,7 @@
 "use client";
 
 import { TrendingUp } from "lucide-react";
-import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
+import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
 
 import {
   Card,
@@ -37,15 +37,12 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function LineGraphics() {
+export function Component() {
   return (
     <Card>
       <CardHeader>
-        <div className="flex">
-          {" "}
-          <CardTitle>Line Chart - Dots</CardTitle>
-          <CardTitle>January - June 2024</CardTitle>
-        </div>
+        <CardTitle>Line Chart - Dots</CardTitle>
+        <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -57,12 +54,20 @@ export function LineGraphics() {
               right: 12,
             }}
           >
-            <CartesianGrid vertical={false} />
+            <CartesianGrid vertical={true} />
             <XAxis
               dataKey="month"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
+              tickFormatter={(value) => value.slice(0, 3)}
+            />
+            <YAxis
+              dataKey="month"
+              type="category"
+              tickLine={false}
+              tickMargin={10}
+              axisLine={false}
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <ChartTooltip
@@ -84,6 +89,14 @@ export function LineGraphics() {
           </LineChart>
         </ChartContainer>
       </CardContent>
+      <CardFooter className="flex-col items-start gap-2 text-sm">
+        <div className="flex gap-2 font-medium leading-none">
+          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+        </div>
+        <div className="leading-none text-muted-foreground">
+          Showing total visitors for the last 6 months
+        </div>
+      </CardFooter>
     </Card>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
-import { LineGraphics } from "@/components/overview/taskToday";
+
+import { Component } from "@/components/overview/taskToday";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Notification } from "iconsax-react";
 
@@ -56,7 +57,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="w-[462px]">
-          <LineGraphics />
+          <Component />
         </div>
       </div>
     </div>
