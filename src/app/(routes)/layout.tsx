@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
+import "react-circular-progressbar/dist/styles.css";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
