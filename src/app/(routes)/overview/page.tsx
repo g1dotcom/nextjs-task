@@ -5,6 +5,7 @@ import { Notification } from "iconsax-react";
 import { CircularProgressbar } from "react-circular-progressbar";
 
 const Overview = () => {
+  const value = 0.45;
   return (
     <div className="w-full h-screen flex flex-col bg-[#FAFAFA] ">
       <header className="bg-[#FFFFFF] h-[192px] flex justify-between p-8">
@@ -25,24 +26,29 @@ const Overview = () => {
           </Avatar>
         </div>
       </header>
-      <div className="w-full flex justify-between">
-        <div className="bg-secondinary-500 text-white">
-          <h1>RunningTask</h1>
-          <p>65</p>
-          <div className="flex">
+      <div className="w-full flex justify-between items-start">
+        <div className="w-[194px] h-[214px] bg-secondinary-500 text-white rounded-[10px] p-4 flex flex-col space-y-5">
+          <h1 className="font-semibold text-[16px]">RunningTask</h1>
+          <p className="font-semibold text-[32px]">65</p>
+          <div className="flex  ">
             <CircularProgressbar
-              value={65}
-              className="w-[68px] h-[68px] "
-              strokeWidth={5}
+              value={value}
+              maxValue={1}
+              text={`${value * 100}%`}
+              className=" h-[68px]"
+              strokeWidth={4}
               styles={{
                 path: { stroke: "#546FFF" },
                 trail: { stroke: "#1a1e38" },
+                text: { fill: "white", fontSize: "18px", fontWeight: "normal" },
               }}
             />
-            ;
-            <h1>
-              <span>100</span>
-              <span>Task</span>
+
+            <h1 className="flex flex-col w-40 justify-center ">
+              <span className="font-semibold text-[20px] ml-4">100</span>
+              <span className="font-medium text-[14px] text-secondinary-300 ml-4">
+                Task
+              </span>
             </h1>
           </div>
         </div>
