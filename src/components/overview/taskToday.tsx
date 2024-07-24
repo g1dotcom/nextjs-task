@@ -17,6 +17,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
   { month: "February", desktop: 305, mobile: 200 },
@@ -39,13 +40,19 @@ const chartConfig = {
 
 export function ActivityChart() {
   return (
-    <Card>
+    <Card className="bg-[#F5F5F7]">
       <CardHeader>
-        <CardTitle>Line Chart - Dots</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <div className="flex justify-between w-full">
+          {" "}
+          <CardTitle>Activity</CardTitle>
+          <CardTitle>This Week</CardTitle>
+        </div>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer
+          className="bg-[#ffffff] rounded-[10px]"
+          config={chartConfig}
+        >
           <LineChart
             accessibilityLayer
             data={chartData}
@@ -57,18 +64,17 @@ export function ActivityChart() {
             <CartesianGrid vertical={true} />
             <XAxis
               dataKey="month"
+              type="category"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <YAxis
-              dataKey="month"
-              type="category"
               tickLine={false}
-              tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) => value.slice(0, 3)}
+              tickMargin={8}
+              tickCount={3}
             />
             <ChartTooltip
               cursor={false}
