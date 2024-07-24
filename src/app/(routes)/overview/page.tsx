@@ -56,7 +56,7 @@ const Overview = () => {
             </h1>
           </div>
         </div>
-        <div className="w-[462px]">
+        <div className="w-[462px] h-[214px]">
           <ActivityChart />
         </div>
       </div>
