@@ -37,7 +37,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function Component() {
+export function ActivityChart() {
   return (
     <Card>
       <CardHeader>
