@@ -19,12 +19,13 @@ import {
 } from "@/components/ui/chart";
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "S", Task: 1, mobile: 80 },
+  { month: "M", Task: 2, mobile: 200 },
+  { month: "T", Task: 2.5, mobile: 120 },
+  { month: "W", Task: 2, mobile: 190 },
+  { month: "T", Task: 1, mobile: 130 },
+  { month: "F", Task: 4, mobile: 140 },
+  { month: "S", Task: 0, mobile: 140 },
 ];
 
 const chartConfig = {
@@ -40,37 +41,43 @@ const chartConfig = {
 
 export function ActivityChart() {
   return (
-    <Card className="bg-[#F5F5F7]">
+    <Card className="bg-[#F5F5F7] rounded-[10px] w-[462px] h-[214px]">
       <CardHeader>
         <div className="flex justify-between w-full">
           {" "}
-          <CardTitle>Activity</CardTitle>
-          <CardTitle>This Week</CardTitle>
+          <CardTitle className="text-[16px] font-semibold text-secondinary-500">
+            Activity
+          </CardTitle>
+          <CardTitle className="text-[12px] font-medium text-secondinary-500">
+            This Week
+          </CardTitle>
         </div>
       </CardHeader>
       <CardContent>
         <ChartContainer
-          className="bg-[#ffffff] rounded-[10px]"
+          className="bg-[#ffffff] rounded-[10px] w-[422px] h-[130px] "
           config={chartConfig}
         >
           <LineChart
             accessibilityLayer
             data={chartData}
             margin={{
-              left: 12,
-              right: 12,
+              left: 24,
+              right: 24,
+              top: 24,
             }}
           >
-            <CartesianGrid vertical={true} />
+            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <XAxis
+              className="text-[12px] text-secondinary-500 font-bold "
               dataKey="month"
-              type="category"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <YAxis
+              className="text-[12px] text-secondinary-500 font-bold "
               tickLine={false}
               axisLine={false}
               tickMargin={8}
@@ -81,16 +88,12 @@ export function ActivityChart() {
               content={<ChartTooltipContent hideLabel />}
             />
             <Line
-              dataKey="desktop"
+              dataKey="Task"
               type="natural"
-              stroke="var(--color-desktop)"
-              strokeWidth={2}
-              dot={{
-                fill: "var(--color-desktop)",
-              }}
-              activeDot={{
-                r: 6,
-              }}
+              stroke="#141522"
+              strokeWidth={3}
+              dot={false}
+              activeDot={false}
             />
           </LineChart>
         </ChartContainer>
