@@ -1,7 +1,8 @@
 "use client";
 
+import { ActivityChart } from "@/components/overview/ActivityCharts";
 import CircleBar from "@/components/overview/CircleBar";
-import { ActivityChart } from "@/components/overview/taskToday";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Notification } from "iconsax-react";
 
