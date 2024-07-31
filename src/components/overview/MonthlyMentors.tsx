@@ -10,7 +10,7 @@ function MonthlyMentors() {
       </h1>
 
       <div className="flex rounded-[10px] gap-[32px] ">
-        <div className="bg-primaryy-0 w-[328px] h-[140px]  ">
+        <div className="bg-primaryy-0 w-[328px] h-[140px]  flex flex-col  ">
           <div className="flex justify-between items-center ">
             <Avatar>
               <AvatarImage src="/profil.png" alt="@shadcn" />
