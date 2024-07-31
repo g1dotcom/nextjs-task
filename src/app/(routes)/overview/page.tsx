@@ -7,8 +7,6 @@ import MonthlyMentors from "@/components/overview/MonthlyMentors";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Notification } from "iconsax-react";
 
-import { CircularProgressbar } from "react-circular-progressbar";
-
 const Overview = () => {
   return (
     <div className="w-3/5 h-screen flex flex-col bg-[#FAFAFA] ">
