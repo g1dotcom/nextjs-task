@@ -70,12 +70,13 @@ export function ActivityChart() {
             accessibilityLayer
             data={chartData}
             margin={{
-              left: 24,
+              left: 0,
               right: 24,
               top: 24,
+              bottom: 12,
             }}
           >
-            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+            <CartesianGrid stroke="#E5E4E2" strokeDasharray="0 0" />
             <XAxis
               className="text-[12px] text-secondinary-500 font-bold "
               dataKey="month"
