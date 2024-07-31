@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
-  weight: "400",
+  weight: "600",
   subsets: ["latin"],
 });
 
