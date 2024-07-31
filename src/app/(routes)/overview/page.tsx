@@ -2,6 +2,7 @@
 
 import { ActivityChart } from "@/components/overview/ActivityCharts";
 import CircleBar from "@/components/overview/CircleBar";
+import MonthlyMentors from "@/components/overview/MonthlyMentors";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Notification } from "iconsax-react";
@@ -10,7 +11,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 
 const Overview = () => {
   return (
-    <div className="w-full h-screen flex flex-col bg-[#FAFAFA] ">
+    <div className="w-3/5 h-screen flex flex-col bg-[#FAFAFA] ">
       <header className="bg-[#FFFFFF] h-[192px] flex justify-between p-8">
         <div className="w-[236px] h-[72px] flex flex-col items-start justify-center ">
           <h1 className="text-secondinary-500 text-[24px] font-semibold">
@@ -29,9 +30,14 @@ const Overview = () => {
           </Avatar>
         </div>
       </header>
-      <div className="w-full flex justify-between items-start p-8">
-        <CircleBar />
-        <ActivityChart />
+      <div className="w-full h-full flex flex-col">
+        <div className="w-full flex justify-between items-start p-8">
+          <CircleBar />
+          <ActivityChart />
+        </div>
+        <div className="w-full flex justify-between items-start p-8">
+          <MonthlyMentors />
+        </div>
       </div>
     </div>
   );
