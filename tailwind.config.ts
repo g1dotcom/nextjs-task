@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         'primaryy': {
+          0: '#FFFFFF',
           100: '#DCE4FF',
           200: '#BAC8FF',
           300: '#98ABFF',
