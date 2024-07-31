@@ -1,3 +1,6 @@
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Button } from "../ui/button";
+
 function MonthlyMentors() {
   return (
     <div className="flex flex-col">
@@ -5,8 +8,22 @@ function MonthlyMentors() {
         Monthly Mentors
       </h1>
 
-      <div className="flex rounded-[10px] gap-[32px]">
-        <div className="bg-primaryy-0 w-[328px] h-[140px]">dfdsfds</div>
+      <div className="flex rounded-[10px] gap-[32px] ">
+        <div className="bg-primaryy-0 w-[328px] h-[140px] flex justify-between items-center ">
+          <Avatar>
+            <AvatarImage src="/profil.png" alt="@shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col w-[124px] h-[40px]">
+            <h1 className="text-secondinary-500 font-semibold text-[16px]">
+              Curious George
+            </h1>
+            <p className="text-secondinary-400 font-semibold text-[16px]">
+              UI UX Design
+            </p>
+          </div>
+          <Button variant="follow">+Follow</Button>
+        </div>
         <div className="bg-primaryy-0 w-[328px] h-[140px]">dfdsfds</div>
       </div>
     </div>
