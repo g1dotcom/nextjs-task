@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export function MontlyCarousel() {
   return (
-    <Carousel>
+    <Carousel className="flex flex-col gap-5">
       <div className="flex justify-between w-full">
         {" "}
         <h1 className="text-secondinary-500 text-[24px] font-semibold">
@@ -28,7 +28,6 @@ export function MontlyCarousel() {
       </div>
       <CarouselContent>
         <CarouselItem>
-          {" "}
           <div className="bg-primaryy-0 w-[328px] h-[140px] space-y-5 p-4 rounded-[10px] flex flex-col justify-center items-center  ">
             <div className="flex justify-between items-center w-full ">
               <div className="flex gap-3">
