@@ -10,8 +10,8 @@ function MonthlyMentors() {
       </h1>
 
       <div className="flex rounded-[10px] gap-[32px] ">
-        <div className="bg-primaryy-0 w-[328px] h-[140px]  flex flex-col justify-center items-center  ">
-          <div className="flex justify-between items-center w-full">
+        <div className="bg-primaryy-0 w-[328px] h-[140px] space-y-5 p-4 rounded-[10px] flex flex-col justify-center items-center  ">
+          <div className="flex justify-between items-center w-full ">
             <div className="flex gap-3">
               <Avatar>
                 <AvatarImage src="/profil.png" alt="@shadcn" />
@@ -29,8 +29,8 @@ function MonthlyMentors() {
             <Button variant="follow">+Follow</Button>
           </div>
           <div className="flex justify-between w-full">
-            <h1 className="flex text-secondinary-500 font-medium">
-              <Notepad2 color="#54577A" size={24} /> 40 Task
+            <h1 className="flex space-x-2 text-secondinary-500 font-medium">
+              <Notepad2 color="#54577A" size={24} /> <p>40 Task</p>
             </h1>
             <p className="flex items-center space-x-2">
               <Star1 color="#FFB054" size={24} variant="Bold" />
