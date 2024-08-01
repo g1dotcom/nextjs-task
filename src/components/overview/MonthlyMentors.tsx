@@ -6,7 +6,7 @@ import { MontlyCarousel } from "./MontlyCarousel";
 function MonthlyMentors() {
   return (
     <div className="flex flex-col">
-      <div className="w-[688px] h-[140px] ">
+      <div className="w-[688px] h-[196px]">
         {" "}
         <MontlyCarousel />
       </div>
