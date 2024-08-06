@@ -24,7 +24,7 @@ export function UpcomingTask() {
         </div>
       </div>
       <CarouselContent>
-        <CarouselItem className="  ">
+        <CarouselItem className=" w-[328px] h-[314px] ">
           <div className="flex flex-col gap-2">
             <Image
               src="/overview/CreatingPerfectWebsite.png"
