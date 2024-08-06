@@ -5,6 +5,7 @@ import CircleBar from "@/components/overview/CircleBar";
 import MonthlyMentors from "@/components/overview/MonthlyMentors";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { UpcomingTask } from "@/components/ui/upcomingTask";
 import { Notification } from "iconsax-react";
 
 const Overview = () => {
@@ -35,6 +36,9 @@ const Overview = () => {
         </div>
         <div className="w-full flex justify-between items-start p-8">
           <MonthlyMentors />
+        </div>
+        <div className="w-full flex justify-between items-start p-8">
+          <UpcomingTask />
         </div>
       </div>
     </div>
