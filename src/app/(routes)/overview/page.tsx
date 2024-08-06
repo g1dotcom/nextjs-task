@@ -12,8 +12,8 @@ import { Notification } from "iconsax-react";
 
 const Overview = () => {
   return (
-    <div className="w-[1440px] h-screen flex   bg-red-300">
-      <div className="w-[752px] h-screen flex flex-col bg-[#FAFAFA]">
+    <div className="w-[1440px] h-full flex   bg-red-300">
+      <div className="w-[752px] h-full flex flex-col bg-[#FAFAFA]">
         <header className="bg-[#FFFFFF] w-full h-[192px] flex justify-between p-8">
           <div className="w-[236px] h-[72px] flex flex-col items-start justify-center ">
             <h1 className="text-secondinary-500 text-[24px] font-semibold">
