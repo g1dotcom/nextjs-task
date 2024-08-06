@@ -6,6 +6,7 @@ import { MontlyCarousel } from "@/components/overview/MontlyCarousel";
 import { UpcomingTask } from "@/components/overview/upcomingTask";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Progress } from "@/components/ui/progress";
 
 import { Notification } from "iconsax-react";
 
