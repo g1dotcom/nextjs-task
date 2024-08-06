@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ProgressBar } from "./progressBar";
+import { Progress } from "../ui/progress";
 
 export function UpcomingTask() {
   return (
@@ -23,7 +23,8 @@ export function UpcomingTask() {
       </div>
       <CarouselContent>
         <CarouselItem className="bg-red-400">
-          <ProgressBar />
+          {/* <ProgressBar /> */}
+          <Progress value={75} />
         </CarouselItem>
       </CarouselContent>
     </Carousel>
