@@ -24,7 +24,6 @@ export function UpcomingTask() {
       <CarouselContent>
         <CarouselItem className="bg-red-400">
           <ProgressBar />
-          <h1>asdjaskjdh</h1>
         </CarouselItem>
       </CarouselContent>
     </Carousel>
