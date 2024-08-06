@@ -12,5 +12,12 @@ export function ProgressBar() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <Progress value={progress} className="w-[75%] bg-primaryy-500" />;
+  return (
+    <div className="w-full">
+      <div className="flex justify-between">
+        <h1>Progress</h1>
+      </div>
+      <Progress value={progress} className="w-[75%] bg-primaryy-500" />
+    </div>
+  );
 }
