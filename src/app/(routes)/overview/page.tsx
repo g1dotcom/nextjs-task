@@ -3,7 +3,7 @@
 import { ActivityChart } from "@/components/overview/ActivityCharts";
 import CircleBar from "@/components/overview/CircleBar";
 import { MontlyCarousel } from "@/components/overview/MontlyCarousel";
-import { UpcomingTask } from "@/components/overview/upcomingTask";
+import { UpcomingTask } from "@/components/overview/UpcomingTask";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Progress } from "@/components/ui/progress";
