@@ -25,7 +25,31 @@ export function UpcomingTask() {
       </div>
       <CarouselContent>
         <CarouselItem className=" w-[328px] h-[314px] ">
-          <div className="flex flex-col gap-2">
+          <div className="w-full flex flex-col gap-2">
+            <Image
+              src="/overview/CreatingPerfectWebsite.png"
+              alt=""
+              width={280}
+              height={110}
+            />
+
+            <div className="flex flex-col">
+              <h1 className="text-secondinary-500 text-[16px] font-Semibold">
+                Creating Perfect Website
+              </h1>
+              <p className="text-secondinary-400 text-[12px] font-normal">
+                Web Developer
+              </p>
+            </div>
+            <div className="flex justify-between w-[280px] text-[16px] font-medium">
+              <h1 className="text-secondinary-500 ">Progress</h1>
+              <p className="text-primaryy-500">{progressValue}%</p>
+            </div>
+            <div className="w-[280px]  flex justify-start">
+              <Progress value={progressValue} />
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-2">
             <Image
               src="/overview/CreatingPerfectWebsite.png"
               alt=""
