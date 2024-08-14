@@ -1,6 +1,6 @@
 import Header from "@/components/overview/header";
 import TaskToday from "@/components/overview/taskToday";
-import UpcomingTask from "@/components/overview/upcomingTask";
+import UpcomingTask from "@/components/overview/UpcomingTask";
 
 function OverviewComponent() {
   return (
