@@ -74,10 +74,8 @@ export function UpcomingTask() {
               <Progress value={progressValue} />
             </div>
             <div className="">
-              <p>
-                {" "}
-                <Timer1 size="32" color="#FF8A65" />{" "}
-              </p>
+              <Timer1 size="32" color="#54577A" />
+              <h1 className="text-secondinary-500">3 Days Left</h1>
             </div>
           </div>
         </CarouselItem>
