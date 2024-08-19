@@ -1,16 +1,20 @@
 "use client";
-
+import React from "react";
+//Components
 import { ActivityChart } from "@/components/overview/ActivityCharts";
 import CircleBar from "@/components/overview/CircleBar";
 import { MontlyCarousel } from "@/components/overview/MontlyCarousel";
 import { UpcomingTask } from "@/components/overview/UpcomingTask";
-
+//Shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Progress } from "@/components/ui/progress";
+import { Calendar } from "@/components/ui/calendar";
 
+//Iconsax
 import { Notification } from "iconsax-react";
 
 const Overview = () => {
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
+
   return (
     <div className="w-[1440px] h-full flex   bg-red-300">
       <div className="w-[752px] h-full flex flex-col bg-[#FAFAFA]">
@@ -45,7 +49,17 @@ const Overview = () => {
           </div>
         </div>
       </div>
-      <div className="w-[436px] h-screen bg-green-500">fhfsdfsdfsdsd</div>
+      <div className="w-[436px] h-screen bg-green-500">
+        <div className="">
+          {" "}
+          <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="rounded-md border"
+          />
+        </div>
+      </div>
     </div>
   );
 };
