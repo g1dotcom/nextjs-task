@@ -1,5 +1,7 @@
+"use client";
 import * as React from "react";
 
+//shadcn
 import {
   Carousel,
   CarouselContent,
@@ -7,9 +9,42 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
 import { Progress } from "../ui/progress";
 import Image from "next/image";
+
+//ıcon sax
 import { Timer1 } from "iconsax-react";
+import { AnimatedTooltip } from "../ui/animated-tooptip";
+
+//people
+
+const people = [
+  {
+    id: 1,
+    name: "John Doe",
+    designation: "Software Engineer",
+    image: "/overview/1.jpg",
+  },
+  {
+    id: 2,
+    name: "Robert Johnson",
+    designation: "Product Manager",
+    image: "/overview/2.jpg",
+  },
+  {
+    id: 3,
+    name: "Jane Smith",
+    designation: "Data Scientist",
+    image: "/overview/3.jpg",
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    designation: "UX Designer",
+    image: "/overview/4.jpg",
+  },
+];
 
 export function UpcomingTask() {
   const progressValue = 85;
@@ -73,9 +108,16 @@ export function UpcomingTask() {
             <div className="w-[280px]  flex justify-start">
               <Progress value={progressValue} />
             </div>
-            <div className="">
-              <Timer1 size="32" color="#54577A" />
-              <h1 className="text-secondinary-500">3 Days Left</h1>
+            <div className="flex w-full items-center justify-between">
+              <div className="flex space-x-2 w-1/2 items-center">
+                <Timer1 size="32" color="#54577A" />
+                <h1 className="text-secondinary-500 text-[16px] font-medium ">
+                  3 Days Left
+                </h1>
+              </div>
+              <div className="w-1/2   flex justify-center items-center">
+                <AnimatedTooltip items={people} />
+              </div>
             </div>
           </div>
         </CarouselItem>
