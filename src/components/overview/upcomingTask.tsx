@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Progress } from "../ui/progress";
 import Image from "next/image";
+import { Timer1 } from "iconsax-react";
 
 export function UpcomingTask() {
   const progressValue = 85;
@@ -51,7 +52,7 @@ export function UpcomingTask() {
           </div>
           <div className="w-full flex flex-col gap-2">
             <Image
-              src="/overview/CreatingPerfectWebsite.png"
+              src="/overview/UpcomingIMG.png"
               alt=""
               width={280}
               height={110}
@@ -71,6 +72,12 @@ export function UpcomingTask() {
             </div>
             <div className="w-[280px]  flex justify-start">
               <Progress value={progressValue} />
+            </div>
+            <div className="">
+              <p>
+                {" "}
+                <Timer1 size="32" color="#FF8A65" />{" "}
+              </p>
             </div>
           </div>
         </CarouselItem>
