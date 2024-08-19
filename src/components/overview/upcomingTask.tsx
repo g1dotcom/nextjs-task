@@ -63,7 +63,7 @@ export function UpcomingTask() {
         <CarouselItem className=" w-[328px] h-[314px] ">
           <div className="w-full flex flex-col gap-2">
             <Image
-              src="/overview/CreatingPerfectWebsite.png"
+              src="/overview/UpcomingIMG.png"
               alt=""
               width={280}
               height={110}
@@ -84,10 +84,21 @@ export function UpcomingTask() {
             <div className="w-[280px]  flex justify-start">
               <Progress value={progressValue} />
             </div>
+            <div className="flex w-full items-center justify-between">
+              <div className="flex space-x-2 w-1/2 items-center">
+                <Timer1 size="32" color="#54577A" />
+                <h1 className="text-secondinary-500 text-[16px] font-medium ">
+                  3 Days Left
+                </h1>
+              </div>
+              <div className="w-1/2   flex justify-center items-center">
+                <AnimatedTooltip items={people} />
+              </div>
+            </div>
           </div>
           <div className="w-full flex flex-col gap-2">
             <Image
-              src="/overview/UpcomingIMG.png"
+              src="/overview/CreatingPerfectWebsite.png"
               alt=""
               width={280}
               height={110}
