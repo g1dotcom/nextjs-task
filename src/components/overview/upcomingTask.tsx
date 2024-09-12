@@ -40,7 +40,7 @@ const people = [
   },
   {
     id: 4,
-    name: "Emily Davis",
+    name: "Emine Çakır",
     designation: "UX Designer",
     image: "/overview/4.jpg",
   },
