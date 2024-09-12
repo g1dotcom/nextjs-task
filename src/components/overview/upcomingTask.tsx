@@ -34,7 +34,7 @@ const people = [
   },
   {
     id: 3,
-    name: "Jane Smith",
+    name: "Jane Smithh",
     designation: "Data Scientist",
     image: "/overview/3.jpg",
   },
